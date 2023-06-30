@@ -16,8 +16,10 @@
     </a>
 
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="/">Головна</a>
-        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="/about">Про нас</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="/">Про нас</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="/places">Місця</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="/seasons">Сезони</a>
+        <a class="me-3 py-2 link-body-emphasis text-decoration-none text-white" href="/airs">Комплекти повітря</a>
     </nav>
     <a class="btn btn-outline-warning" href="/review">Відгуки</a>
 

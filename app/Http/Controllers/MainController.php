@@ -4,15 +4,58 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use App\Models\Air;
+use App\Models\Place;
+use App\Models\Season;
 
 class MainController extends Controller
 {
-    public function home(){
-        return view('home');
-    }
     public function about(){
         return view('about');
     }
+
+    public function all_places(){
+        $places = Place::all();
+        return view('places', compact('places'));
+    }
+
+    public function one_place($id)
+    {
+        $place = Place::find($id);
+        return view('one_place', compact('place'));
+    }
+
+    public function all_airs(){
+        $airs = Air::all();
+        return view('airs', compact('airs'));
+    }
+
+    public function one_air($id)
+    {
+        $place = Air::find($id);
+        return view('one_air', compact('air'));
+    }
+
+    public function all_seasons(){
+        $airs = Season::all();
+        return view('seasons', compact('seasons'));
+    }
+
+    public function one_season($id)
+    {
+        $place = Season::find($id);
+        return view('one_season', compact('season'));
+    }
+
+
+
+//    public function seasons(){
+//        return view('seasons');
+//    }
+//
+//    public function airs(){
+//        return view('airs');
+//    }
 
     public function review(){
         $reviews = new Contact();
